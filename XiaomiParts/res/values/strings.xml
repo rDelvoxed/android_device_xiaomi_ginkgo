@@ -106,6 +106,7 @@
     <string name="kcal_presets">@string/presets_dialog_title</string>
     <string name="kcal_reset">Reset</string>
 
+<<<<<<< HEAD
     <!-- Speaker -->
     <string name="speaker_category">Speaker</string>
 
@@ -119,6 +120,8 @@
     <string name="fastcharge_title">Enable USB Fastcharge</string>
     <string name="fastcharge_summary">Charge upto 900mA when connected to a computer via USB 3.0 port</string>
 
+=======
+>>>>>>> ef94c5a... [Squashed] ginkgo: Import XiaomiParts
     <!-- Vibration -->
     <string name="vibration_title">Haptic feedback</string>
     <string name="vibration_strength_title">Strength</string>

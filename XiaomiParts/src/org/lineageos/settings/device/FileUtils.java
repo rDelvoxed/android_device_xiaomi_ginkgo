@@ -115,6 +115,7 @@ public class FileUtils {
         return line;
     }
 
+<<<<<<< HEAD
     static boolean getFileValueAsBoolean(String filename, boolean defValue) {
         String fileValue = getValue(filename);
         if (fileValue != null) {
@@ -123,6 +124,8 @@ public class FileUtils {
         return defValue;
     }
 
+=======
+>>>>>>> ef94c5a... [Squashed] ginkgo: Import XiaomiParts
     static void setProp(String prop, boolean value) {
         if (value) {
             SystemProperties.set(prop, "1");
