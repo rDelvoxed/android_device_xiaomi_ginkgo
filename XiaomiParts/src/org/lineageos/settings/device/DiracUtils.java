@@ -26,11 +26,8 @@ final class DiracUtils {
 
     void onBootCompleted() {
         setEnabled(mDiracSound.getMusic() == 1);
-<<<<<<< HEAD
-=======
         mDiracSound.setHeadsetType(mDiracSound.getHeadsetType());
         setLevel(getLevel());
->>>>>>> ef94c5a... [Squashed] ginkgo: Import XiaomiParts
     }
 
     void setEnabled(boolean enable) {
@@ -42,8 +39,6 @@ final class DiracUtils {
         return mDiracSound.getMusic() == 1;
     }
 
-<<<<<<< HEAD
-=======
     private String getLevel() {
         StringBuilder selected = new StringBuilder();
         for (int band = 0; band <= 6; band++) {
@@ -54,7 +49,6 @@ final class DiracUtils {
         return selected.toString();
     }
 
->>>>>>> ef94c5a... [Squashed] ginkgo: Import XiaomiParts
     void setLevel(String preset) {
         String[] level = preset.split("\\s*,\\s*");
         for (int band = 0; band <= level.length - 1; band++) {

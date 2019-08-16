@@ -14,7 +14,6 @@ on boot
     chmod 660 /sys/devices/platform/kcal_ctrl.0/kcal_val
     chmod 660 /sys/devices/platform/kcal_ctrl.0/kcal_min
     chmod 660 /sys/devices/platform/kcal_ctrl.0/kcal
-<<<<<<< HEAD
 
 # USB Fastcharge
     chown system system /sys/kernel/fast_charge/force_fast_charge
@@ -23,5 +22,4 @@ on boot
 # Vibration
     chown system system /sys/class/leds/vibrator/vtg_level
     chmod 0660 /sys/class/leds/vibrator/vtg_level
-=======
->>>>>>> ef94c5a... [Squashed] ginkgo: Import XiaomiParts
+

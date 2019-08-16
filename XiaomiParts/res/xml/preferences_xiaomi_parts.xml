@@ -78,10 +78,6 @@
     </PreferenceCategory>
 
     <PreferenceCategory
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 82acd2a... ginkgo: XiaomiParts: Implement Clear Speaker
         android:key="speaker"
         android:title="@string/speaker_category">
 
@@ -97,7 +93,6 @@
     </PreferenceCategory>
 
     <PreferenceCategory
-<<<<<<< HEAD
         android:key="usb_fastcharge"
         android:title="@string/usb_fastcharge_title" >
 
@@ -110,10 +105,6 @@
     </PreferenceCategory>
 
     <PreferenceCategory
-=======
->>>>>>> ef94c5a... [Squashed] ginkgo: Import XiaomiParts
-=======
->>>>>>> 82acd2a... ginkgo: XiaomiParts: Implement Clear Speaker
         android:key="vibration"
         android:title="@string/vibration_title">
 

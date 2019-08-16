@@ -45,15 +45,12 @@ class DiracSound extends AudioEffect {
         checkStatus(setParameter(DIRACSOUND_PARAM_MUSIC, enable));
     }
 
-<<<<<<< HEAD
-=======
     int getHeadsetType() throws IllegalStateException,
             IllegalArgumentException, UnsupportedOperationException {
         int[] value = new int[1];
         checkStatus(getParameter(DIRACSOUND_PARAM_HEADSET_TYPE, value));
         return value[0];
     }
->>>>>>> ef94c5a... [Squashed] ginkgo: Import XiaomiParts
 
     void setHeadsetType(int type) throws IllegalStateException,
             IllegalArgumentException, UnsupportedOperationException {
@@ -66,8 +63,6 @@ class DiracSound extends AudioEffect {
                 String.valueOf(level).getBytes()));
     }
 
-<<<<<<< HEAD
-=======
     float getLevel(int band) throws IllegalStateException,
             IllegalArgumentException, UnsupportedOperationException {
         int[] param = new int[2];
@@ -77,5 +72,5 @@ class DiracSound extends AudioEffect {
         checkStatus(getParameter(param, value));
         return Float.valueOf(new String(value));
     }
->>>>>>> ef94c5a... [Squashed] ginkgo: Import XiaomiParts
+
 }
