@@ -25,6 +25,7 @@ import androidx.preference.PreferenceCategory;
 
 import org.lineageos.settings.device.kcal.KCalSettingsActivity;
 <<<<<<< HEAD
+<<<<<<< HEAD
 import org.lineageos.settings.device.preferences.CustomSeekBarPreference;
 import org.lineageos.settings.device.preferences.SecureSettingListPreference;
 import org.lineageos.settings.device.preferences.SecureSettingSwitchPreference;
@@ -36,6 +37,13 @@ import org.lineageos.settings.device.preferences.SecureSettingSwitchPreference;
 import org.lineageos.settings.device.preferences.VibrationSeekBarPreference;
 import org.lineageos.settings.device.preferences.CustomSeekBarPreference;
 >>>>>>> ef94c5a... [Squashed] ginkgo: Import XiaomiParts
+=======
+import org.lineageos.settings.device.preferences.CustomSeekBarPreference;
+import org.lineageos.settings.device.preferences.SecureSettingListPreference;
+import org.lineageos.settings.device.preferences.SecureSettingSwitchPreference;
+import org.lineageos.settings.device.preferences.VibrationSeekBarPreference;
+import org.lineageos.settings.device.speaker.ClearSpeakerActivity;
+>>>>>>> 82acd2a... ginkgo: XiaomiParts: Implement Clear Speaker
 
 import java.lang.Math.*;
 
@@ -53,6 +61,7 @@ public class DeviceSettings extends PreferenceFragment implements
     private static final String PREF_DEVICE_KCAL = "device_kcal";
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     private static final String PREF_CLEAR_SPEAKER = "clear_speaker_settings";
 
     public static final String CATEGORY_FASTCHARGE = "usb_fastcharge";
@@ -61,6 +70,10 @@ public class DeviceSettings extends PreferenceFragment implements
 
 =======
 >>>>>>> ef94c5a... [Squashed] ginkgo: Import XiaomiParts
+=======
+    private static final String PREF_CLEAR_SPEAKER = "clear_speaker_settings";
+
+>>>>>>> 82acd2a... ginkgo: XiaomiParts: Implement Clear Speaker
     public static final String CATEGORY_VIBRATOR = "vibration";
     public static final String PREF_VIBRATION_STRENGTH = "vibration_strength";
     public static final String VIBRATION_STRENGTH_PATH = "/sys/devices/virtual/timed_output/vibrator/vtg_level";
@@ -70,11 +83,16 @@ public class DeviceSettings extends PreferenceFragment implements
     public static final int MAX_VIBRATION = 3596;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     private Preference mClearSpeakerPref;
     private SecureSettingSwitchPreference mFastcharge;
 
 =======
 >>>>>>> ef94c5a... [Squashed] ginkgo: Import XiaomiParts
+=======
+    private Preference mClearSpeakerPref;
+
+>>>>>>> 82acd2a... ginkgo: XiaomiParts: Implement Clear Speaker
     @Override
     public void onCreatePreferences(Bundle savedInstanceState, String rootKey) {
         setPreferencesFromResource(R.xml.preferences_xiaomi_parts, rootKey);
@@ -117,6 +135,9 @@ public class DeviceSettings extends PreferenceFragment implements
         });
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 82acd2a... ginkgo: XiaomiParts: Implement Clear Speaker
         mClearSpeakerPref = (Preference) findPreference(PREF_CLEAR_SPEAKER);
         mClearSpeakerPref.setOnPreferenceClickListener(preference -> {
             Intent intent = new Intent(getActivity().getApplicationContext(), ClearSpeakerActivity.class);
@@ -124,6 +145,7 @@ public class DeviceSettings extends PreferenceFragment implements
             return true;
         });
 
+<<<<<<< HEAD
         if (FileUtils.fileWritable(USB_FASTCHARGE_PATH)) {
             mFastcharge = (SecureSettingSwitchPreference) findPreference(PREF_USB_FASTCHARGE);
             mFastcharge.setEnabled(Fastcharge.isSupported());
@@ -133,6 +155,8 @@ public class DeviceSettings extends PreferenceFragment implements
 
 =======
 >>>>>>> ef94c5a... [Squashed] ginkgo: Import XiaomiParts
+=======
+>>>>>>> 82acd2a... ginkgo: XiaomiParts: Implement Clear Speaker
         if (FileUtils.fileWritable(VIBRATION_STRENGTH_PATH)) {
             VibrationSeekBarPreference vibrationStrength = (VibrationSeekBarPreference) findPreference(PREF_VIBRATION_STRENGTH);
             vibrationStrength.setOnPreferenceChangeListener(this);
