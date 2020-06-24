@@ -44,7 +44,7 @@ import org.lineageos.settings.device.speaker.ClearSpeakerActivity;
 import org.lineageos.settings.device.preferences.SecureSettingListPreference;
 import org.lineageos.settings.device.preferences.SecureSettingSwitchPreference;
 import org.lineageos.settings.device.preferences.VibrationSeekBarPreference;
-import org.lineageos.settings.device.preferences.CustomSeekBarPreference;
+import org.lineageos.settings.device.speaker.ClearSpeakerActivity;
 
 import java.lang.Math.*;
 
