@@ -131,9 +131,20 @@ public class DeviceSettings extends PreferenceFragment implements
 
         if (FileUtils.fileWritable(USB_FASTCHARGE_PATH)) {
             mFastcharge = (SecureSettingSwitchPreference) findPreference(PREF_USB_FASTCHARGE);
+<<<<<<< HEAD
             mFastcharge.setEnabled(Fastcharge.isSupported());
             mFastcharge.setChecked(Fastcharge.isCurrentlyEnabled(this.getContext()));
             mFastcharge.setOnPreferenceChangeListener(new Fastcharge(getContext()));
+=======
+<<<<<<< HEAD
+            mFastcharge.setEnabled(Fastcharge.isSupported());
+            mFastcharge.setChecked(Fastcharge.isCurrentlyEnabled(this.getContext()));
+            mFastcharge.setOnPreferenceChangeListener(new Fastcharge(getContext()));
+=======
+            mFastcharge.setChecked(FileUtils.getFileValueAsBoolean(USB_FASTCHARGE_PATH, true));
+            mFastcharge.setOnPreferenceChangeListener(this);
+>>>>>>> c3b43eb... ginkgo: XiaomiParts: Add USB fastcharge switch
+>>>>>>> d380608eeea0d38498c0711e2e485b3315f87c06
         } else { getPreferenceScreen().removePreference(findPreference(CATEGORY_FASTCHARGE)); }
 
         if (FileUtils.fileWritable(VIBRATION_STRENGTH_PATH)) {
